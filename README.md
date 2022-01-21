@@ -7,13 +7,12 @@ The working environment can be loaded via the provided environment.yml file usin
 ```
 conda env create -f environment.yml
 source activate deepscm
+cd deepscm-master
 ```
 
 # Prediction
 There are two steps before running the DeepSCM prediction. 
-
 First, prepare two fasta files of the heavy chain and light chain, respectively. 
-
 The fasta files must have the following format:
 
 seq_H.fasta
@@ -39,4 +38,11 @@ Using the ANARCI program (https://github.com/oxpig/ANARCI) to number the antibod
 ANARCI -i seq_H.fasta -o seq_aligned -s imgt -r heavy --csv
 ANARCI -i seq_L.fasta -o seq_aligned -s imgt -r light --csv
 ```
-
+Second, run the sequence preprocessing program to generate the input file for DeepSCM.
+```
+python seq_preprocessing.py
+```
+Finally, the prediction can be run
+```
+python pred.py
+```
