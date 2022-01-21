@@ -15,6 +15,8 @@ There are two steps before running the DeepSCM prediction.
 First, prepare two fasta files of the heavy chain and light chain, respectively. 
 
 The fasta files must have the following format:
+
+seq_H.fasta
 ```
 >name_1	
 [heavy chain sequence]
@@ -23,6 +25,7 @@ The fasta files must have the following format:
 >name_3
 [heavy chain sequence]
 ```
+seq_L.fasta
 ```
 >name_1	
 [light chain sequence]
