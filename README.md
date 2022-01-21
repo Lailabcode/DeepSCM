@@ -44,5 +44,5 @@ python seq_preprocessing.py --seq_H seq_aligned_H.csv --seq_L seq_aligned_KL.csv
 ```
 Finally, the prediction can be run
 ```
-python pred.py
+python pred.py --infile DeepSCM_input.txt
 ```
