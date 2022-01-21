@@ -34,5 +34,9 @@ seq_L.fasta
 >name_3
 [light chain sequence]
 ```
-Using the ANARCI program (https://github.com/oxpig/ANARCI) to number the antibody sequence using IMGT definition in a CSV format. 
+Using the ANARCI program (https://github.com/oxpig/ANARCI) to number the antibody sequences using IMGT definition in a CSV format. 
+```
+ANARCI -i seq_H.fasta -o seq_aligned -s imgt -r heavy --csv
+ANARCI -i seq_L.fasta -o seq_aligned -s imgt -r light --csv
+```
 
