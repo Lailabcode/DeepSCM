@@ -40,7 +40,7 @@ ANARCI -i seq_L.fasta -o seq_aligned -s imgt -r light --csv
 ```
 Second, run the sequence preprocessing program to generate the input file for DeepSCM.
 ```
-python seq_preprocessing.py
+python seq_preprocessing.py --seq_H seq_aligned_H.csv --seq_L seq_aligned_KL.csv --outfile DeepSCM_input.txt
 ```
 Finally, the prediction can be run
 ```
