@@ -2,11 +2,14 @@
 A convolutional neural network model to predict spatial charge map (SCM) score, a molecular dynamics simulation-based model to predict antibody viscosity. 
 
 # Prepare working environment
-The working environment can be loaded via the provided environment.yml file using the following commands:
+The working environment can be setup using the following commands:
 
 ```
-conda env create -f environment.yml
+conda create -n deepscm python=3.7
 source activate deepscm
+conda install scikit-learn
+pip install --upgrade tensorflow
+
 cd deepscm-master
 ```
 
