@@ -49,3 +49,6 @@ Finally, the prediction can be run
 ```
 python pred.py --infile DeepSCM_input.txt
 ```
+
+# Citation
+https://doi.org/10.1016/j.csbj.2022.04.035
