@@ -52,4 +52,4 @@ python pred.py --infile DeepSCM_input.txt
 
 # Citation
 PK Lai, DeepSCM: An efficient convolutional neural network surrogate model for the screening of therapeutic antibody viscosity, 
-Comput. Struct. Biotechnol. J., 20:2143-2152,2022 (https://doi.org/10.1016/j.csbj.2022.04.035).
+Comput. Struct. Biotechnol. J., 20:2143-2152, 2022 (https://doi.org/10.1016/j.csbj.2022.04.035).
